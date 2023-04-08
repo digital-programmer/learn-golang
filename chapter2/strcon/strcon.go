@@ -8,7 +8,7 @@ import (
 // Swap character case from upper to lower OR lower to upper
 func Swapcase(str string) string {
 	buf := &bytes.Buffer{}
-	for _,r := range str {
+	for _, r := range str {
 		if unicode.IsUpper(r) {
 			buf.WriteRune(unicode.ToLower(r))
 		} else {
